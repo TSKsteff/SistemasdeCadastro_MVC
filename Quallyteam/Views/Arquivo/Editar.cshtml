@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Editar Cadastros";
+}
+
+   <div class="text-center">
+
+       
+       <h1 class="display-4">Editar Cadastros</h1>
+       
+    
+   </div>
+    
+   <form>
+      <div class="form-group">
+       <label for="Titulo">Titulo</label>
+       <input type="text" class="form-control"  placeholder="digite seu titulo">
+      </div>
+
+      <br />
+
+      <div class="form-group form-check">
+       <label for="Processo">Processo:</label>
+
+        <select name="Processo" class="form-control">
+                <option selected>Selecione</option>
+                <option value="Admistrativo">Admistrativo</option>
+                <option value="TI">TI</option>
+        </select>
+        </div>
+
+        <br />
+
+      <div class="form-group form-check">
+       <label for="categoria">Categoria:</label>
+
+        <select name="categoria" class="form-control">
+                <option selected>Selecione</option>
+                <option value="1">teste 1</option>
+                <option value="2" selected>teste 2 </option>
+        </select>
+        </div>
+
+        <br />
+
+      <div class="form-group">
+       <label for="arquivo">Arquivo:</label>
+
+       <input type="file" name="Arquivo" class="form-control rounded-0" id="inputNome">
+
+      </div>
+
+      <br />
+
+  <button type="submit" class="btn btn-primary">Alterar</button>
+  <a class="btn btn-secondary" asp-controller="Arquivo" asp-action="Index" role="button">Voltar</a>
+
+</form>
